@@ -28,5 +28,5 @@ public class Product
     [Range(1, 9999, ErrorMessage = "Categoria não é válida")]
     public int CategoryId { get; set; }
 
-    public Category ProductCategory { get; set; } = null!;https://github.com/oimarcella/crud-blazor.git
+    public Category ProductCategory { get; set; } = null!;
 }
