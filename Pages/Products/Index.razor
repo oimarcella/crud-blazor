@@ -1,21 +1,19 @@
 ﻿@page "/products";
 @inject AppDbContext _context;
-@using Microsoft.EntityFrameworkCore;
-@using System.Globalization;
 
-<div class="d-flex align-items-center head">
+<div class="d-flex align-items-center head mb-4">
     <h1>Produtos cadastrados</h1>
     <a href="products/create" class="btn btn-1">Novo produto</a>
 </div>
 
-<table>
+<table class="list">
     <tr>
         <td>ID</td>
-        <td>Produto</td>
+        <td>Nome</td>
         <td>Preço</td>
         <td>Categoria</td>
-        <td class="text-center">Editar</td>
-        <td class="text-center">Deletar</td>
+        <td class="text-center action">Editar</td>
+        <td class="text-center action">Deletar</td>
     </tr>
     @foreach (var produto in _products)
     {
@@ -24,10 +22,10 @@
             <td>@produto.Title</td>
             <td>@produto.Price.ToString("C", new CultureInfo("pt-BR"))</td>
             <td>@produto.ProductCategory.Title</td>
-            <td class="text-center">
+            <td class="text-center action">
                 <a href="/products/edit/@produto.Id"><i class="fa-solid fa-pen"></i></a>
             </td>
-            <td class="text-center">
+            <td class="text-center action">
                 <a class="ml-3 btn btn-delete" href="/products/delete/@produto.Id"><i class="fa-solid fa-trash"></i></a>
             </td>
         </tr>
@@ -35,7 +33,7 @@
 </table>
 
 @code {
-    Product _model = new();
+    //Product _model = new();
     List<Product> _products = new();
     string? _errorMessage = null;
 

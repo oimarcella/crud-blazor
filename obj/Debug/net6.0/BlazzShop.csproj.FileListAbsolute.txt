@@ -68,3 +68,5 @@ F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\refint\BlazzShop.dll
 F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\BlazzShop.pdb
 F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\BlazzShop.genruntimeconfig.cache
 F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\ref\BlazzShop.dll
+F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\BlazzShop.sourcelink.json
+F:\Pessoal\Cursos\Balta.io\BlazzShop\obj\Debug\net6.0\scopedcss\Pages\Categories\Index.razor.rz.scp.css

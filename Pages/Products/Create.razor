@@ -1,8 +1,6 @@
 @page "/products/create";
 @inject AppDbContext _context;
 @inject NavigationManager _navigationManager;
-@using Microsoft.EntityFrameworkCore;
-
 
 <h1>Novo Produto</h1>
 
@@ -35,7 +33,8 @@
             </div>
         }
 
-        <button class="mt-3 btn btn-success" type="submit">Enviar</button>
+        <button class="mt-3 btn btn-success" type="submit">Cadastrar</button>
+        <a class="mt-3 btn btn-secondary" href="/products">Cancelar</a>
     </div>
 </EditForm>
 

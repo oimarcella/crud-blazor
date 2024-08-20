@@ -77,3 +77,69 @@ a,
     background: rgb(0, 3, 255);
     background: linear-gradient(0deg, rgba(0, 3, 255, 1) 0%, rgba(2, 126, 251, 1) 100%);
 }
+
+.head a.btn {
+    margin-left: 20px;
+}
+
+table.list {
+    width: 100%;
+}
+
+table.list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+table.list td {
+    padding: 11px 14px;
+    color: #1f1f1f;
+}
+
+table.list tr {
+    cursor: pointer;
+}
+
+table.list tr:first-of-type {
+    background-color: #f4f4f4;
+}
+
+table.list tr:hover:not(:first-of-type) {
+    background: linear-gradient(to right, #f2f6f9, #e7f1fc, #f2f6f9);
+}
+
+table.list tr:not(:last-of-type) {
+    border-bottom: 1px solid lightgray;
+}
+
+table.list td {
+    padding: 10px 15px;
+}
+
+table.list .action {
+    width: 30px;
+}
+
+.delete-form {
+    margin-bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delete-form h1 {
+    text-align: center;
+}
+
+.delete-form .btn-danger {
+    margin-bottom: 20px;
+}
+
+.delete-form a {
+    background-color: #f4f3f3;
+    color: #8a8a8a;
+    padding: 6px 12px;
+    border-radius: 4px;
+}

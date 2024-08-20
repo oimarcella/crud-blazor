@@ -1,5 +1,5 @@
-@page "/products/delete/{id:int}";
-@inject AppDbContext _context;
+@page "/categories/delete/{id:int}"
+@inject AppDbContext _context
 @inject NavigationManager _navigationManager;
 
 <EditForm Model="_model" OnValidSubmit="@HandleSubmitAsync" class="delete-form">
@@ -9,7 +9,7 @@
     <h1>Quer mesmo deletar <br /><strong>@_model?.Title</strong>?</h1>
 
     <button class="mt-3 btn btn-danger" type="submit">Sim, quero deletar</button>
-    <a href="/products">Não, voltar para início</a>
+    <a href="/categories">Não, voltar para início</a>
 
     @if (!string.IsNullOrEmpty(_errorMessage))
     {
@@ -20,31 +20,29 @@
 </EditForm>
 
 @code {
-    Product? _model = new();
+    Category? _model = new();
     string? _errorMessage = null;
+
     [Parameter]
     public int Id { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
-        _model = await _context.Products.FindAsync(Id);
+        _model = await _context.Categories.FindAsync(Id);
     }
 
     async Task HandleSubmitAsync()
     {
+        if (_model == null) throw new Exception("Nenhuma categoria encontrada");
         try
         {
-            var product = await _context.Products.FirstOrDefaultAsync(x => x.Id == Id);
-
-            if (product == null) throw new Exception("Produto não encontrado");
-
-            _context.Products.Remove(product);
+            _context.Remove(_model);
             await _context.SaveChangesAsync();
-            _navigationManager.NavigateTo("/products");
+            _navigationManager.NavigateTo("/categories");
         }
         catch
         {
-            _errorMessage = "Não foi possível deletar o produto";
+            _errorMessage = "Não foi possível deletar a categoria";
         }
     }
 }

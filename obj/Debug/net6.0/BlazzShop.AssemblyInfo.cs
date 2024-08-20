@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazzShop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d918d3907d69dc47c702df07beb03cfff9e586ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazzShop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazzShop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

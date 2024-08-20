@@ -12,36 +12,3 @@ body[b-c3296njfg0] {
     text-transform: uppercase;
     font-weight: 600;
 }
-
-.head a.btn[b-c3296njfg0] {
-    margin-left: 20px;
-}
-table[b-c3296njfg0] {
-    width: 100%;
-}
-a[b-c3296njfg0] {
-    text-decoration: none;
-    color: inherit;
-}
-td[b-c3296njfg0] {
-    padding: 11px 14px;
-    color: #1f1f1f;
-}
-
-tr[b-c3296njfg0] {
-    cursor: pointer;
-}
-
-tr:hover:not(:first-of-type)[b-c3296njfg0] {
-    background: linear-gradient(to right, #fafdff, #edf6ff, #fafdff);
-}
-
-tr:not(:last-of-type)[b-c3296njfg0] {
-    border-bottom: 1px solid lightgray;
-}
-
-
-
-table td[b-c3296njfg0] {
-    padding: 10px 15px;
-}
